@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sharon Jonallagadda Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#certificates-section" class="nav-link"><span>Certificates</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(C:\Users\sharo\Downloads\Sharon Picture.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sharon Jonallagadda</span></h1>
+						<!-- <p class="mb-4">Passionate about Cybersecurity with a knack for problem-solving and innovation.</p> -->
+                
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+						<p>
+							<a href="https://docs.google.com/document/d/1oP0f0UwOLIxtzix8cG8qvWDta0QdKWG7/edit?usp=sharing&ouid=105461836541583991955&rtpof=true&sd=true" class="btn btn-primary py-3 px-4">
+							  View Resume
+							</a>
+						  </p>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'IT & Compliance Intern @Zilla Security',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+		
+					
+                    <div class="row justify-content-center pb-3">
+						<div class="col-md-8">
+							<div class="heading-section ftco-animate text-center">
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								<div class="text-left">
+									<p class="text-justify">
+								<p>I am an IT & Compliance Analyst Intern at Zilla Security, where I focus on improving compliance and managing IT assets. I'm currently pursuing Master's in Information Technology with a specialization in Cybersecurity from Clark University. My skills include network security, cryptography, and vulnerability assessment. At Zilla Security, I integrate tools like Bitbucket, Jira, Snyk, and AWS with OneTrust to automate compliance tasks. I also manage company devices using JAMF. I have experience as a Graduate Teaching Assistant for Cybersecurity Fundamentals at Clark University and have worked with Deloitte, Tech Mahindra, and Amazon. In these roles, I did user acceptance testing, network troubleshooting, and quality assurance. My projects include analyzing the Spotify Music Dataset with Splunk and Emirates Airlines Project. I have also earned certifications in Wireshark and Nmap, demonstrating my desire to continually learn and stay updated with the latest cybersecurity tools and practices.</p>
+								</div>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Information Technology</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Cybersecurity</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master's in Information Technology</span></li>
+									<li class="d-flex"><span>Technical Skills:</span> <span>C programming, Python, ServiceNow, JIRA, Splunk Tool</span></li>
+									<li class="d-flex"><span>Cybersecurity Skills:</span> <span>Network Security, Cryptography, Wireshark, Burp Suite, Nmap, Windows OS, Command Line, TCP/IP protocol, OSI Model, IAM, GRC, SOC2 Compliance, Snyk, OneTrust Tool, Vulnerability Assessment.</span></li>
+									<li class="d-flex"><span>Soft Skills:</span> <span>Analytical and Problem-solving skills, Communication skills, Presentation Skills</span></li>
+								</ul>
+							</div>
+						</div>
+									
+								</ul>
+							</div>
+						</div>
+
+							</div>
+					<!-- <div class="row justify-content-center mt-5"> -->
+								<!-- <div class="col-md-6 text-center ftco-animate"> -->
+									<!-- <p><a href="https://docs.google.com/document/d/1oP0f0UwOLIxtzix8cG8qvWDta0QdKWG7/edit?usp=sharing&ouid=107927908725601854929&rtpof=true&sd=true" class="btn btn-primary py-4 px-5">View Resume</a></p> -->
+								<!-- </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>IT & Compliance intern actively seeking opportunities, currently pursuing a graduate degree at Clark University. Formerly worked in technical support roles at Deloitte and Tech Mahindra, with a background in Electronics & Communication Engineering and certification as a Pega System Architect.</p>
+          </div>
+         </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2024-Present</span>
+						<h2>IT & Compliance Intern</h2>
+						<span class="position">Zilla Security</span>
+				
+							<ul>
+		
+								<li>I integrated Bitbucket, Jira, Snyk, and AWS with OneTrust, automating evidence collection for compliance controls.</li>
+								<li>Serving as SME for OneTrust, editing policies and creating readiness projects.</li>
+								<li>I utilize JAMF to supervise company devices, ensuring enrollment, enabling FileVault, and managing device assignments.</li>
+								<li>Enhanced compliance efficiency, updated policies, and improved device security and management.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan 2024-May 2024</span>
+						<h2>Graduate Teaching Assistant</h2>
+						<span class="position">Clark University</span>
+			
+							<ul>
+								<li>Assisted 30 students helping them understand tricky topics during office hours.</li>
+								<li>Provided feedback to professors for Cybersecurity Fundamentals allowing for content to be more engaging.</li>
+								<li>Ran lab sessions to teach hands-on cybersecurity skills.</li>
+								<li>Graded weekly student work, giving constructive feedback resulting in 90% student satisfaction.</li>
+								
+							</ul>
+						
+					</div>
+					
+
+
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">May 2025</span>
+    					<h2>Master of Science in Information Technology Specialization in Cybersecurity (STEM)</h2>
+    					<span class="position">Clark University; Worcester, MA</span>
+    					
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">May 2019</span>
+    					<h2>Bachelor of Technology in Electronics & Communication Engineering</h2>
+    					<span class="position">CVR College of Engineering; Hyderabad, India</span>
+    					
+    				</div>
+				</div>
+    		</div>
+
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+          </div>
+        </div>
+        
+
+				<div class="resume-wrap ftco-animate">
+				   <div class="col-md-6"></div>
+				   <span class="date">Spotify Music Dataset Analysis</span>
+					<h2>Clark University; Worcester, MA</h2>
+					<span class="position">Dec, 2023</span>
+					<ul>
+		
+						<li>Identified the potential insights within the Spotify One Million Songs dataset on Kaggle.</li>
+						<li>Utilized Splunk to create interactive dashboards by first uploading the dataset onto Splunk, mined the data, created reports, focusing on key trends in Spotify data.</li>
+						<li>Linked the created dashboards to Splunk apps for seamless integration and accessibility.</li>
+						<li>Enabled data-driven decision-making by presenting comprehensive analyses of Spotify data.</li>
+						<li>Provided visually appealing and insightful dashboards for tracking music trends over the years.</li>
+					</ul>
+
+					
+				</div>
+			    <div class="resume-wrap ftco-animate">
+					<div class="col-md-6"></div>
+					<span class="date">Case Study: Emirates Airlines</span>
+					 <h2>Clark University; Worcester, MA</h2>
+					 <span class="position">Dec, 2023</span>
+					 <ul>
+		 
+						 <li>Analyzed Emirates Airlines' business model, organizational structure, and conducted a SWOT analysis.</li>
+						 <li>Explored opportunities for Emirates' entry into the US market, targeting its luxury reputation.</li>
+						 <li>Developed a Minimum Viable Product (MVP) video to simulate Emirates' potential US launch.</li>
+						 <li>Presented the MVP video to peers for feedback on market perceptions.</li>
+						 <li>Gained expertise in MVP creation, data flow diagrams, use case modeling, story maps, entity-relationship diagrams (ERD), technology subway systems, A3 problem-solving, and Minimum Business Increment (MBI).</li>
+						 <li>Utilized Trello for project planning and collaboration.</li>
+					 </ul>
+ 
+					 
+				 </div>
+			</div>
+          
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<section class="ftco-section" id="certificates-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certificates</h1>
+			  <h2 class="mb-4">Certificates</h2>
+			</div>
+		  </div>
+		  
+  
+				  <div class="resume-wrap ftco-animate">
+					 <div class="col-md-6"></div>
+					 <span class="date">Wireshark for Beginners: Capture Packets</span>
+					  <h2>Coursera</h2>
+					  <ul>
+		  
+						  <li>Developed proficiency in Wireshark through a project-based course.</li>
+						  <li>Applied hands-on skills to capture and analyze network traffic securely.</li>
+						  <li>Acquired expertise in distinguishing between encrypted and unencrypted traffic.</li>
+					  </ul>
+  
+					  
+				  </div>
+				  <div class="resume-wrap ftco-animate">
+					  <div class="col-md-6"></div>
+					  <span class="date">Vulnerability scanning with Nmap: Network Scanning</span>
+					   <h2>Coursera</h2>
+					   <ul>
+		   
+						   <li>Applied Nmap tool expertise in a guided project on Vulnerability Scanning, focusing on network scanning and security auditing.</li>
+						   <li>Verified Nmap installation and version on systems, showcasing meticulous attention to detail.</li>
+						   <li>Executed comprehensive network scanning, including host discovery, port scanning.</li>
+						   <li>Demonstrated proficiency in operating system detection and version detection using Nmap for thorough security assessments.</li>
+						   
+					   </ul>
+   
+					   
+				   </div>
+				   <div class="resume-wrap ftco-animate">
+					<div class="col-md-6"></div>
+					<span class="date">Tata Cybersecurity Security Analyst Job Simulation</span>
+					 <h2>Forage</h2>
+					 <ul>
+		 
+						 <li>Completed a job simulation involving identity and access management (IAM) for Tata Consultancy Services, collaborating with a Cybersecurity Consulting team.</li>
+						 <li>Acquired expertise in IAM principles, cybersecurity best practices, and strategic alignment with business objectives.</li>
+						 
+					 </ul>
+			  </div>
+			
+					  </div>
+				  </div>
+			  <!-- </div> -->
+		  </div>
+	  </section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+				<p><strong>Worcester, MA</strong></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center"> 
+          		<div class="icon d-flex align-items-center justify-content-center">
+          	         <span class="icon-linkedin"></span>
+          		</div>
+          		<h3 class="mb-4">Linkedin</h3>
+				<p><a href="https://www.linkedin.com/in/sharonn-j/">sharonn-j</a></p>
+				  </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:njonallagadda@clarku.edu">njonallagadda@clarku.edu</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Blog</h3>
+	            <p><a href="#">Click here</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have any<span> Job Openings?  </span> <a href="https://forms.gle/MUpwKyYWxTEEmWmg9" class="btn btn-primary py-3 px-5">Click here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<!-- <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0"> -->
+					  <!-- <li class="ftco-animate normal-txt">Find me on  </li> -->
+					  <!-- <li class="ftco-animate"><a href="https://www.linkedin.com/in/sharonn-j/"><span class="icon-linkedin"></span></a></li>   -->
+					  
+					<!-- </ul> -->
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
